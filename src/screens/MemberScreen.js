@@ -120,7 +120,7 @@ const Member = () => {
       id: dataMember.length + 1,
       ...formData,
     };
-    if (false) {
+    if (isOnline) {
       fetch(`${BASE_URL}${apiMember}`, {
         method: 'POST',
         headers: {
